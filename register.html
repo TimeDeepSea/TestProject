@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8" />
+    <title>用户注册</title>
+    <link rel="stylesheet"  href="./css/dr.css" />
+
+</head>
+
+<body>
+<div class="login">
+    <h2>用户注册</h2>
+    <form action="./php/register.php" method="post">
+        <div class="login_box">
+            <!-- required 不能为空-->
+
+            <input type="text" name='username' id='name' required  />
+            <label for="name" >用户名</label>
+        </div>
+        <div class="login_box">
+
+            <input type="password" name='password' id='pwd' required>
+            <label for="pwd">密码</label>
+        </div>
+        <div class="login_box">
+
+            <input type="password" name='confirm_psd' id='confirm_psd' required>
+            <label for="confirm_psd">确认密码</label>
+        </div>
+        <div class="login_box">
+
+            <input type="tel" name='phone' id='phone' required>
+            <label for="phone">电话</label>
+        </div>
+        <div class="login_box">
+
+            <input type="email" name='email' id='email' required>
+            <label for="email">邮箱</label>
+        </div>
+        <div class="login_su">
+            <input type="submit" value="注册">
+        </div>
+    </form>
+</div>
+
+</body>
+</html>
